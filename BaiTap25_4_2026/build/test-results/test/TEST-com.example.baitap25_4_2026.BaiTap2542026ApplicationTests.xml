@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.baitap25_4_2026.BaiTap2542026ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-25T13:27:35.086Z" hostname="DESKTOP-750M4LN" time="6.722">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.baitap25_4_2026.BaiTap2542026ApplicationTests" time="0.53"/>
+  <system-out><![CDATA[20:27:35.384 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.baitap25_4_2026.BaiTap2542026ApplicationTests]: BaiTap2542026ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:27:35.538 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.baitap25_4_2026.BaiTap2542026Application for test class com.example.baitap25_4_2026.BaiTap2542026ApplicationTests
+20:27:35.689 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.baitap25_4_2026.BaiTap2542026ApplicationTests]: BaiTap2542026ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:27:35.689 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.baitap25_4_2026.BaiTap2542026Application for test class com.example.baitap25_4_2026.BaiTap2542026ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.6)
+
+2026-04-25T20:27:36.197+07:00  INFO 12612 --- [    Test worker] c.e.b.BaiTap2542026ApplicationTests      : Starting BaiTap2542026ApplicationTests using Java 17.0.12 with PID 12612 (started by Loc Nguyen in D:\BaiTapBenRIKKEIEDU\JAVA WEB\ss14\BaiTap25_4_2026)
+2026-04-25T20:27:36.200+07:00  INFO 12612 --- [    Test worker] c.e.b.BaiTap2542026ApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-04-25T20:27:37.142+07:00  INFO 12612 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-25T20:27:37.228+07:00  INFO 12612 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
+2026-04-25T20:27:37.835+07:00  INFO 12612 --- [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-25T20:27:37.913+07:00  INFO 12612 --- [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-04-25T20:27:38.608+07:00  INFO 12612 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-25T20:27:38.640+07:00  INFO 12612 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-25T20:27:38.822+07:00  INFO 12612 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-25T20:27:38.838+07:00  INFO 12612 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-25T20:27:38.854+07:00  WARN 12612 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-25T20:27:38.885+07:00  INFO 12612 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-25T20:27:40.083+07:00  INFO 12612 --- [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-25T20:27:40.145+07:00  INFO 12612 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-25T20:27:40.265+07:00  INFO 12612 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-25T20:27:40.539+07:00  WARN 12612 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-25T20:27:41.255+07:00  INFO 12612 --- [    Test worker] c.e.b.BaiTap2542026ApplicationTests      : Started BaiTap2542026ApplicationTests in 5.432 seconds (process running for 7.473)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sach cong viec</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 720px;
+            margin: 40px auto;
+            line-height: 1.5;
+        }
+
+        h1 {
+            margin-bottom: 16px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .empty {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+<h1>Danh sach cong viec</h1>
+
+<a th:href="@{/add-todo}">Them cong viec</a>
+
+<table th:if="${!#lists.isEmpty(todos)}">
+    <thead>
+    <tr>
+        <th>Noi dung</th>
+        <th>Han</th>
+        <th>Trang thai</th>
+        <th>Uu tien</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="todo : ${todos}">
+        <td th:text="${todo.content}"></td>
+        <td th:text="${todo.dueDate}"></td>
+        <td th:text="${todo.status}"></td>
+        <td th:text="${todo.priority}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<p class="empty" th:if="${#lists.isEmpty(todos)}">Chua co cong viec nao.</p>
+</body>
+</html>

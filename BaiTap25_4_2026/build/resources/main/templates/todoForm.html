@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Them cong viec</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 720px;
+            margin: 40px auto;
+            line-height: 1.5;
+        }
+
+        h1 {
+            margin-bottom: 16px;
+        }
+
+        form {
+            display: grid;
+            gap: 12px;
+        }
+
+        input, select, button {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .error {
+            color: #c00;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Them cong viec</h1>
+
+<form th:action="@{/add-todo}" th:object="${todo}" method="post">
+    <div>
+        <label for="content">Noi dung</label>
+        <input id="content" type="text" th:field="*{content}">
+        <p class="error" th:errors="*{content}"></p>
+    </div>
+
+    <div>
+        <label for="dueDate">Han hoan thanh</label>
+        <input id="dueDate" type="date" th:field="*{dueDate}">
+        <p class="error" th:errors="*{dueDate}"></p>
+    </div>
+
+    <div>
+        <label for="status">Trang thai</label>
+        <select id="status" th:field="*{status}">
+            <option value="">Chon trang thai</option>
+            <option value="PENDING">PENDING</option>
+            <option value="DONE">DONE</option>
+        </select>
+        <p class="error" th:errors="*{status}"></p>
+    </div>
+
+    <div>
+        <label for="priority">Do uu tien</label>
+        <select id="priority" th:field="*{priority}">
+            <option value="">Chon do uu tien</option>
+            <option value="LOW">LOW</option>
+            <option value="MEDIUM">MEDIUM</option>
+            <option value="HIGH">HIGH</option>
+        </select>
+        <p class="error" th:errors="*{priority}"></p>
+    </div>
+
+    <button type="submit">Luu</button>
+</form>
+
+<p>
+    <a th:href="@{/todos}">Quay lai danh sach</a>
+</p>
+</body>
+</html>
